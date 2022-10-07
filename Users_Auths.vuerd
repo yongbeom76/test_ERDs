@@ -3,8 +3,8 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -0.9259258891329368,
-    "scrollLeft": -0.4629629445664684,
+    "scrollTop": 0,
+    "scrollLeft": 0,
     "zoomLevel": 1,
     "show": {
       "tableComment": true,
@@ -53,13 +53,13 @@
             "default": "",
             "option": {
               "autoIncrement": false,
-              "primaryKey": false,
+              "primaryKey": true,
               "unique": false,
-              "notNull": false
+              "notNull": true
             },
             "ui": {
               "active": false,
-              "pk": false,
+              "pk": true,
               "fk": false,
               "pfk": false,
               "widthName": 60,
@@ -141,9 +141,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 28.2406,
-          "top": 18.5183,
-          "zIndex": 7,
+          "left": 9.7221,
+          "top": 12.4997,
+          "zIndex": 33,
           "widthName": 60,
           "widthComment": 60
         },
@@ -184,13 +184,13 @@
             "default": "",
             "option": {
               "autoIncrement": false,
-              "primaryKey": false,
+              "primaryKey": true,
               "unique": false,
-              "notNull": false
+              "notNull": true
             },
             "ui": {
               "active": false,
-              "pk": false,
+              "pk": true,
               "fk": false,
               "pfk": false,
               "widthName": 97.5703125,
@@ -203,9 +203,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 40.7399,
-          "top": 193.5184,
-          "zIndex": 12,
+          "left": 31.4803,
+          "top": 231.4816,
+          "zIndex": 36,
           "widthName": 70.80859375,
           "widthComment": 60
         },
@@ -225,19 +225,19 @@
               "autoIncrement": false,
               "primaryKey": false,
               "unique": false,
-              "notNull": false
+              "notNull": true
             },
             "ui": {
               "active": false,
               "pk": false,
-              "fk": false,
+              "fk": true,
               "pfk": false,
               "widthName": 60,
               "widthComment": 60,
               "widthDataType": 60,
               "widthDefault": 60
             },
-            "id": "70ccf21c-bf72-498b-9cac-d9afcbcda447"
+            "id": "c32ddb2b-ee6e-4e03-a182-7885378cdd71"
           },
           {
             "name": "접근권한 대표값",
@@ -248,26 +248,26 @@
               "autoIncrement": false,
               "primaryKey": false,
               "unique": false,
-              "notNull": false
+              "notNull": true
             },
             "ui": {
               "active": false,
               "pk": false,
-              "fk": false,
+              "fk": true,
               "pfk": false,
               "widthName": 97.5703125,
               "widthComment": 60,
               "widthDataType": 60,
               "widthDefault": 60
             },
-            "id": "48196bf4-86dd-4f5f-9de5-16ff309e5343"
+            "id": "d4480fec-36bf-4d6c-92d9-aa9621d9c0d7"
           }
         ],
         "ui": {
           "active": false,
-          "left": 389.8157,
-          "top": 36.1111,
-          "zIndex": 17,
+          "left": 463.8905,
+          "top": 46.2958,
+          "zIndex": 39,
           "widthName": 60,
           "widthComment": 60
         },
@@ -281,6 +281,59 @@
     "memos": []
   },
   "relationship": {
-    "relationships": []
+    "relationships": [
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "344638b7-475e-42c0-810a-4adf7cf72f62",
+          "columnIds": [
+            "3d453834-b10f-4b89-9a98-9a99ac854403"
+          ],
+          "x": 356.7221,
+          "y": 87.9997,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "570feafd-9031-4f58-8025-ba57bdb631a5",
+          "columnIds": [
+            "c32ddb2b-ee6e-4e03-a182-7885378cdd71"
+          ],
+          "x": 463.8905,
+          "y": 73.7958,
+          "direction": "left"
+        },
+        "constraintName": "fk_users_to_auths",
+        "visible": true,
+        "id": "776cafc7-a326-44e0-b783-78ffffb8cd18"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "e1a7ba5e-dca8-464c-86bd-eff1ec334b66",
+          "columnIds": [
+            "7600d086-9381-4846-b7a2-495577c9f958"
+          ],
+          "x": 416.0506125,
+          "y": 286.48159999999996,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "570feafd-9031-4f58-8025-ba57bdb631a5",
+          "columnIds": [
+            "d4480fec-36bf-4d6c-92d9-aa9621d9c0d7"
+          ],
+          "x": 463.8905,
+          "y": 128.79579999999999,
+          "direction": "left"
+        },
+        "constraintName": "fk_authnames_to_auths",
+        "visible": true,
+        "id": "f3f9d334-b372-47e7-abe1-2cc742a49abd"
+      }
+    ]
   }
 }

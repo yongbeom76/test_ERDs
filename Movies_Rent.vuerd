@@ -256,7 +256,7 @@
             "id": "c87f3edd-a18a-4927-9f80-c4f6f239f578"
           },
           {
-            "name": "포스터",
+            "name": "포스터목록 대표값",
             "comment": "",
             "dataType": "",
             "default": "",
@@ -271,19 +271,19 @@
               "pk": false,
               "fk": true,
               "pfk": false,
-              "widthName": 60,
+              "widthName": 110.5703125,
               "widthComment": 60,
               "widthDataType": 60,
               "widthDefault": 60
             },
-            "id": "4782e16d-895d-4042-a642-02fc56722dc5"
+            "id": "03b7a22f-8b85-4c77-9844-ba6f43397251"
           }
         ],
         "ui": {
           "active": false,
-          "left": 26.8523,
+          "left": 25.9264,
           "top": 383.7959,
-          "zIndex": 51,
+          "zIndex": 56,
           "widthName": 60,
           "widthComment": 60
         },
@@ -301,13 +301,13 @@
             "default": "",
             "option": {
               "autoIncrement": false,
-              "primaryKey": true,
+              "primaryKey": false,
               "unique": false,
               "notNull": true
             },
             "ui": {
               "active": false,
-              "pk": true,
+              "pk": false,
               "fk": false,
               "pfk": false,
               "widthName": 60,
@@ -324,13 +324,13 @@
             "default": "",
             "option": {
               "autoIncrement": false,
-              "primaryKey": false,
+              "primaryKey": true,
               "unique": false,
-              "notNull": false
+              "notNull": true
             },
             "ui": {
               "active": false,
-              "pk": false,
+              "pk": true,
               "fk": false,
               "pfk": false,
               "widthName": 110.5703125,
@@ -345,7 +345,7 @@
           "active": false,
           "left": 490.7413,
           "top": 293.9821,
-          "zIndex": 50,
+          "zIndex": 55,
           "widthName": 67,
           "widthComment": 60
         },
@@ -430,7 +430,7 @@
           "columnIds": [
             "c87f3edd-a18a-4927-9f80-c4f6f239f578"
           ],
-          "x": 200.3523,
+          "x": 224.71155625,
           "y": 383.7959,
           "direction": "top"
         },
@@ -445,7 +445,7 @@
         "start": {
           "tableId": "80c98f85-69ef-4855-86d8-151c539453e0",
           "columnIds": [
-            "5b6b19bf-0222-44c2-9ba1-fabc8ee2d2b0"
+            "8d338663-5df7-4e39-a196-e4f40c96be73"
           ],
           "x": 490.7413,
           "y": 348.9821,
@@ -454,15 +454,15 @@
         "end": {
           "tableId": "803080dc-4d30-4179-b9e4-0eefe44c480a",
           "columnIds": [
-            "4782e16d-895d-4042-a642-02fc56722dc5"
+            "03b7a22f-8b85-4c77-9844-ba6f43397251"
           ],
-          "x": 373.8523,
+          "x": 423.4967125,
           "y": 438.7959,
           "direction": "right"
         },
         "constraintName": "fk_포스터목록_to_포스터",
         "visible": true,
-        "id": "f0c6a849-723f-4d31-a8bc-f2668bb4a42a"
+        "id": "e4257c46-573c-4789-9436-93d8901c7c9f"
       }
     ]
   }

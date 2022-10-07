@@ -4,7 +4,7 @@
     "width": 2000,
     "height": 2000,
     "scrollTop": 0,
-    "scrollLeft": -5.092592390231152,
+    "scrollLeft": 0,
     "zoomLevel": 1,
     "show": {
       "tableComment": true,
@@ -256,7 +256,7 @@
             "id": "c87f3edd-a18a-4927-9f80-c4f6f239f578"
           },
           {
-            "name": "",
+            "name": "포스터",
             "comment": "",
             "dataType": "",
             "default": "",
@@ -276,14 +276,14 @@
               "widthDataType": 60,
               "widthDefault": 60
             },
-            "id": "59e0d0a5-40c1-4241-aafd-5e0792a343ab"
+            "id": "4782e16d-895d-4042-a642-02fc56722dc5"
           }
         ],
         "ui": {
           "active": false,
           "left": 26.8523,
           "top": 383.7959,
-          "zIndex": 40,
+          "zIndex": 51,
           "widthName": 60,
           "widthComment": 60
         },
@@ -301,13 +301,13 @@
             "default": "",
             "option": {
               "autoIncrement": false,
-              "primaryKey": false,
+              "primaryKey": true,
               "unique": false,
-              "notNull": false
+              "notNull": true
             },
             "ui": {
               "active": false,
-              "pk": false,
+              "pk": true,
               "fk": false,
               "pfk": false,
               "widthName": 60,
@@ -339,36 +339,13 @@
               "widthDefault": 60
             },
             "id": "8d338663-5df7-4e39-a196-e4f40c96be73"
-          },
-          {
-            "name": "",
-            "comment": "",
-            "dataType": "",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": true,
-              "unique": false,
-              "notNull": true
-            },
-            "ui": {
-              "active": false,
-              "pk": true,
-              "fk": false,
-              "pfk": false,
-              "widthName": 60,
-              "widthComment": 60,
-              "widthDataType": 60,
-              "widthDefault": 60
-            },
-            "id": "393b026a-fc5e-4f70-84eb-d6dea9ef0b3b"
           }
         ],
         "ui": {
           "active": false,
           "left": 490.7413,
           "top": 293.9821,
-          "zIndex": 43,
+          "zIndex": 50,
           "widthName": 67,
           "widthComment": 60
         },
@@ -468,16 +445,16 @@
         "start": {
           "tableId": "80c98f85-69ef-4855-86d8-151c539453e0",
           "columnIds": [
-            "393b026a-fc5e-4f70-84eb-d6dea9ef0b3b"
+            "5b6b19bf-0222-44c2-9ba1-fabc8ee2d2b0"
           ],
           "x": 490.7413,
-          "y": 359.2321,
+          "y": 348.9821,
           "direction": "left"
         },
         "end": {
           "tableId": "803080dc-4d30-4179-b9e4-0eefe44c480a",
           "columnIds": [
-            "59e0d0a5-40c1-4241-aafd-5e0792a343ab"
+            "4782e16d-895d-4042-a642-02fc56722dc5"
           ],
           "x": 373.8523,
           "y": 438.7959,
@@ -485,7 +462,7 @@
         },
         "constraintName": "fk_포스터목록_to_포스터",
         "visible": true,
-        "id": "f013be4b-3bdd-4172-a614-691e55077585"
+        "id": "f0c6a849-723f-4d31-a8bc-f2668bb4a42a"
       }
     ]
   }

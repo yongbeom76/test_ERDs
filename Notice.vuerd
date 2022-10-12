@@ -3,7 +3,7 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": 0,
+    "scrollTop": -0.9259258891329368,
     "scrollLeft": 0,
     "zoomLevel": 1,
     "show": {
@@ -43,11 +43,73 @@
   "table": {
     "tables": [
       {
-        "name": "MOVIE_NAME_GENRE",
+        "name": "Notice",
+        "comment": "공지사항",
+        "columns": [
+          {
+            "name": "NO",
+            "comment": "",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "d76d402e-4608-4d3c-a3f9-599ba951cd0e"
+          },
+          {
+            "name": "TITLE_ID",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "99b58edd-b94b-4519-88ba-cf3521e65102"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 74.074,
+          "top": 56.9441,
+          "zIndex": 89,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "f015c50f-ff8b-4d5b-a6c9-eb8143a35877"
+      },
+      {
+        "name": "TITLE",
         "comment": "",
         "columns": [
           {
-            "name": "UNIQUE_ID",
+            "name": "TITLE_ID",
             "comment": "",
             "dataType": "",
             "default": "",
@@ -62,15 +124,15 @@
               "pk": true,
               "fk": false,
               "pfk": false,
-              "widthName": 68.87255859375,
+              "widthName": 60,
               "widthComment": 60,
               "widthDataType": 60,
               "widthDefault": 60
             },
-            "id": "038b883e-67f9-40c1-b3c0-b5ace4c4ca98"
+            "id": "8d985fed-e54d-442e-b464-72311c798b86"
           },
           {
-            "name": "MOVIE_NAME_GENRE",
+            "name": "TITLE",
             "comment": "",
             "dataType": "",
             "default": "",
@@ -85,29 +147,121 @@
               "pk": false,
               "fk": false,
               "pfk": false,
-              "widthName": 131.111328125,
+              "widthName": 60,
               "widthComment": 60,
               "widthDataType": 60,
               "widthDefault": 60
             },
-            "id": "217ecc34-50ce-4d4a-a752-899424e73d47"
+            "id": "aa58f7f0-6970-4b92-b954-e81cb2f5c231"
+          },
+          {
+            "name": "USER_ID",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "1f144c50-14bf-4df1-a03f-a2fe9858ef76"
+          },
+          {
+            "name": "DATE_CREATED",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 91.34326171875,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "4bd2aeb4-3ffc-4f51-9415-ffbca37a86d7"
+          },
+          {
+            "name": "VIEWS",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "898bb513-c902-4a7d-98da-93f619ff14b9"
           }
         ],
         "ui": {
           "active": false,
-          "left": 29.1667,
-          "top": 24.0736,
-          "zIndex": 1,
-          "widthName": 131.111328125,
+          "left": 108.3326,
+          "top": 271.2955,
+          "zIndex": 99,
+          "widthName": 60,
           "widthComment": 60
         },
         "visible": true,
-        "id": "37e0b0d5-31e5-4793-9382-7ed545a4e99f"
+        "id": "9cf9a8b6-eb76-4c70-b359-b0d036010d9a"
       },
       {
-        "name": "RENTER",
+        "name": "WRITER",
         "comment": "",
         "columns": [
+          {
+            "name": "USER_ID",
+            "comment": "",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "ff8a58c5-3ae2-4c48-b435-e50e2202e75c"
+          },
           {
             "name": "NAME",
             "comment": "",
@@ -129,228 +283,19 @@
               "widthDataType": 60,
               "widthDefault": 60
             },
-            "id": "a784d6b1-595b-4bcd-a9f1-258662ad8a39"
-          },
-          {
-            "name": "UNIQUE_ID",
-            "comment": "",
-            "dataType": "",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": true,
-              "unique": false,
-              "notNull": true
-            },
-            "ui": {
-              "active": false,
-              "pk": true,
-              "fk": false,
-              "pfk": false,
-              "widthName": 68.87255859375,
-              "widthComment": 60,
-              "widthDataType": 60,
-              "widthDefault": 60
-            },
-            "id": "d88e8f02-cf61-4136-a5f6-ea52e250ab21"
+            "id": "77fce08c-658a-48d9-abf5-6d44eda0dad9"
           }
         ],
         "ui": {
           "active": false,
-          "left": 274.537,
-          "top": 166.6672,
-          "zIndex": 3,
+          "left": 67.5923,
+          "top": 548.6115,
+          "zIndex": 100,
           "widthName": 60,
           "widthComment": 60
         },
         "visible": true,
-        "id": "3b30fb6d-8b74-4d4f-8759-2373f438f25a"
-      },
-      {
-        "name": "RENTER",
-        "comment": "",
-        "columns": [
-          {
-            "name": "UNIQUE_ID_MOVIE_NAME_GENRE",
-            "comment": "",
-            "dataType": "",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": false,
-              "unique": false,
-              "notNull": true
-            },
-            "ui": {
-              "active": false,
-              "pk": false,
-              "fk": true,
-              "pfk": false,
-              "widthName": 203.51904296875,
-              "widthComment": 60,
-              "widthDataType": 60,
-              "widthDefault": 60
-            },
-            "id": "7f52b796-6486-4cc6-95ca-c08b71ec0a2b"
-          },
-          {
-            "name": "UNIQUE_ID_RENTER",
-            "comment": "",
-            "dataType": "",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": false,
-              "unique": false,
-              "notNull": true
-            },
-            "ui": {
-              "active": false,
-              "pk": false,
-              "fk": true,
-              "pfk": false,
-              "widthName": 120.59326171875,
-              "widthComment": 60,
-              "widthDataType": 60,
-              "widthDefault": 60
-            },
-            "id": "59c64910-32c6-4299-8301-6b0f2adb29a8"
-          }
-        ],
-        "ui": {
-          "active": false,
-          "left": 540.7416,
-          "top": 18.0549,
-          "zIndex": 2,
-          "widthName": 60,
-          "widthComment": 60
-        },
-        "visible": true,
-        "id": "b38fa602-2172-48ed-a8c7-c253be296fdb"
-      },
-      {
-        "name": "POSTER",
-        "comment": "",
-        "columns": [
-          {
-            "name": "UNIQUE_ID_MOVIE_NAME_GENRE",
-            "comment": "",
-            "dataType": "",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": false,
-              "unique": false,
-              "notNull": true
-            },
-            "ui": {
-              "active": false,
-              "pk": false,
-              "fk": true,
-              "pfk": false,
-              "widthName": 203.51904296875,
-              "widthComment": 60,
-              "widthDataType": 60,
-              "widthDefault": 60
-            },
-            "id": "c87f3edd-a18a-4927-9f80-c4f6f239f578"
-          },
-          {
-            "name": "UNIQUE_ID_POSTER_LIST",
-            "comment": "",
-            "dataType": "",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": false,
-              "unique": false,
-              "notNull": true
-            },
-            "ui": {
-              "active": false,
-              "pk": false,
-              "fk": true,
-              "pfk": false,
-              "widthName": 149.8115234375,
-              "widthComment": 60,
-              "widthDataType": 60,
-              "widthDefault": 60
-            },
-            "id": "03b7a22f-8b85-4c77-9844-ba6f43397251"
-          }
-        ],
-        "ui": {
-          "active": false,
-          "left": 25.9264,
-          "top": 383.7959,
-          "zIndex": 4,
-          "widthName": 60,
-          "widthComment": 60
-        },
-        "visible": true,
-        "id": "803080dc-4d30-4179-b9e4-0eefe44c480a"
-      },
-      {
-        "name": "POSTER_LIST",
-        "comment": "",
-        "columns": [
-          {
-            "name": "POSTER",
-            "comment": "",
-            "dataType": "",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": false,
-              "unique": false,
-              "notNull": true
-            },
-            "ui": {
-              "active": false,
-              "pk": false,
-              "fk": false,
-              "pfk": false,
-              "widthName": 60,
-              "widthComment": 60,
-              "widthDataType": 60,
-              "widthDefault": 60
-            },
-            "id": "5b6b19bf-0222-44c2-9ba1-fabc8ee2d2b0"
-          },
-          {
-            "name": "UNIQUE_ID",
-            "comment": "",
-            "dataType": "",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": true,
-              "unique": false,
-              "notNull": true
-            },
-            "ui": {
-              "active": false,
-              "pk": true,
-              "fk": false,
-              "pfk": false,
-              "widthName": 68.87255859375,
-              "widthComment": 60,
-              "widthDataType": 60,
-              "widthDefault": 60
-            },
-            "id": "8d338663-5df7-4e39-a196-e4f40c96be73"
-          }
-        ],
-        "ui": {
-          "active": false,
-          "left": 538.8897,
-          "top": 285.1854,
-          "zIndex": 5,
-          "widthName": 77.40380859375,
-          "widthComment": 60
-        },
-        "visible": true,
-        "id": "80c98f85-69ef-4855-86d8-151c539453e0"
+        "id": "0e5f0601-bc83-4afd-b00f-c6e62d6e35ef"
       }
     ],
     "indexes": []
@@ -362,107 +307,55 @@
     "relationships": [
       {
         "identification": false,
-        "relationshipType": "OneN",
+        "relationshipType": "ZeroOne",
         "startRelationshipType": "Dash",
         "start": {
-          "tableId": "37e0b0d5-31e5-4793-9382-7ed545a4e99f",
+          "tableId": "9cf9a8b6-eb76-4c70-b359-b0d036010d9a",
           "columnIds": [
-            "038b883e-67f9-40c1-b3c0-b5ace4c4ca98"
+            "8d985fed-e54d-442e-b464-72311c798b86"
           ],
-          "x": 447.278028125,
-          "y": 79.0736,
-          "direction": "right"
-        },
-        "end": {
-          "tableId": "b38fa602-2172-48ed-a8c7-c253be296fdb",
-          "columnIds": [
-            "7f52b796-6486-4cc6-95ca-c08b71ec0a2b"
-          ],
-          "x": 540.7416,
-          "y": 45.5549,
-          "direction": "left"
-        },
-        "constraintName": "fk_영화이름과 장르_to_대여자",
-        "visible": true,
-        "id": "a550b59b-0f20-4b4f-bb39-5f7c34a13bd0"
-      },
-      {
-        "identification": false,
-        "relationshipType": "OneN",
-        "startRelationshipType": "Dash",
-        "start": {
-          "tableId": "3b30fb6d-8b74-4d4f-8759-2373f438f25a",
-          "columnIds": [
-            "d88e8f02-cf61-4136-a5f6-ea52e250ab21"
-          ],
-          "x": 452.473279296875,
-          "y": 166.6672,
+          "x": 297.504230859375,
+          "y": 271.2955,
           "direction": "top"
         },
         "end": {
-          "tableId": "b38fa602-2172-48ed-a8c7-c253be296fdb",
+          "tableId": "f015c50f-ff8b-4d5b-a6c9-eb8143a35877",
           "columnIds": [
-            "59c64910-32c6-4299-8301-6b0f2adb29a8"
+            "99b58edd-b94b-4519-88ba-cf3521e65102"
           ],
-          "x": 540.7416,
-          "y": 100.5549,
-          "direction": "left"
-        },
-        "constraintName": "fk_사용자들_to_대여자",
-        "visible": true,
-        "id": "5040fc7a-55c7-47f0-9e33-73ff84bee95f"
-      },
-      {
-        "identification": false,
-        "relationshipType": "OneN",
-        "startRelationshipType": "Dash",
-        "start": {
-          "tableId": "37e0b0d5-31e5-4793-9382-7ed545a4e99f",
-          "columnIds": [
-            "038b883e-67f9-40c1-b3c0-b5ace4c4ca98"
-          ],
-          "x": 238.2223640625,
-          "y": 134.0736,
+          "x": 247.574,
+          "y": 166.9441,
           "direction": "bottom"
         },
-        "end": {
-          "tableId": "803080dc-4d30-4179-b9e4-0eefe44c480a",
-          "columnIds": [
-            "c87f3edd-a18a-4927-9f80-c4f6f239f578"
-          ],
-          "x": 271.185921484375,
-          "y": 383.7959,
-          "direction": "top"
-        },
-        "constraintName": "fk_영화이름과 장르_to_포스터",
+        "constraintName": "fk_title_to_notice",
         "visible": true,
-        "id": "3ed1c961-6dd5-4732-82bd-b8bb211ec82d"
+        "id": "fb9405af-0796-4388-80e4-0c98b5d30308"
       },
       {
         "identification": false,
-        "relationshipType": "OneN",
+        "relationshipType": "ZeroN",
         "startRelationshipType": "Dash",
         "start": {
-          "tableId": "80c98f85-69ef-4855-86d8-151c539453e0",
+          "tableId": "0e5f0601-bc83-4afd-b00f-c6e62d6e35ef",
           "columnIds": [
-            "8d338663-5df7-4e39-a196-e4f40c96be73"
+            "ff8a58c5-3ae2-4c48-b435-e50e2202e75c"
           ],
-          "x": 538.8897,
-          "y": 340.1854,
-          "direction": "left"
+          "x": 241.0923,
+          "y": 548.6115,
+          "direction": "top"
         },
         "end": {
-          "tableId": "803080dc-4d30-4179-b9e4-0eefe44c480a",
+          "tableId": "9cf9a8b6-eb76-4c70-b359-b0d036010d9a",
           "columnIds": [
-            "03b7a22f-8b85-4c77-9844-ba6f43397251"
+            "1f144c50-14bf-4df1-a03f-a2fe9858ef76"
           ],
-          "x": 516.4454429687501,
-          "y": 438.7959,
-          "direction": "right"
+          "x": 297.504230859375,
+          "y": 442.7955,
+          "direction": "bottom"
         },
-        "constraintName": "fk_포스터목록_to_포스터",
+        "constraintName": "fk_writer_to_title",
         "visible": true,
-        "id": "e4257c46-573c-4789-9436-93d8901c7c9f"
+        "id": "985827ba-365e-4a6e-974b-68e41e1672bf"
       }
     ]
   }

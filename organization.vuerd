@@ -3,7 +3,7 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": 0,
+    "scrollTop": -2.222222133919048,
     "scrollLeft": 0,
     "zoomLevel": 1,
     "show": {
@@ -78,7 +78,7 @@
               "autoIncrement": false,
               "primaryKey": false,
               "unique": false,
-              "notNull": false
+              "notNull": true
             },
             "ui": {
               "active": false,
@@ -93,7 +93,7 @@
             "id": "f468c5c8-16b2-40c3-b6d8-cc305206034c"
           },
           {
-            "name": "UNIQUE_ID_CHILD",
+            "name": "UNIQUE_ID_PARENT",
             "comment": "하위대표값",
             "dataType": "VARCHAR(200)",
             "default": "",
@@ -108,7 +108,7 @@
               "pk": false,
               "fk": true,
               "pfk": false,
-              "widthName": 111.154296875,
+              "widthName": 120.83447265625,
               "widthComment": 67,
               "widthDataType": 89.29296875,
               "widthDefault": 60
@@ -118,9 +118,9 @@
         ],
         "ui": {
           "active": true,
-          "left": 32.87,
-          "top": 156.4815,
-          "zIndex": 12,
+          "left": 49.5369,
+          "top": 92.5924,
+          "zIndex": 6,
           "widthName": 103.5498046875,
           "widthComment": 60
         },
@@ -144,8 +144,8 @@
           "columnIds": [
             "1913775c-3231-4622-9182-63d11f034aec"
           ],
-          "x": 461.8153125,
-          "y": 156.4815,
+          "x": 478.4822125,
+          "y": 92.5924,
           "direction": "top"
         },
         "end": {
@@ -153,8 +153,8 @@
           "columnIds": [
             "88c0e27d-b2e1-4fca-833a-f7688edbc104"
           ],
-          "x": 481.8153125,
-          "y": 176.4815,
+          "x": 498.4822125,
+          "y": 112.5924,
           "direction": "right"
         },
         "constraintName": "fk_organizations_to_organizations",
